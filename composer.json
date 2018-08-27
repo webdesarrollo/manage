@@ -1,12 +1,12 @@
 {
-    "name": "sejo/pagination",
-    "description": "Pagination package.",
+    "name": "devnoisy/manage",
+    "description": "Manage template.",
     "license": "MIT",
     "homepage": "https://laravel.com",
     "authors": [
         {
-            "name": "Sejo",
-            "email": "sejo@mail.com"
+            "name": "DevNoisy",
+            "email": "webdesarrollo@mail.com"
         }
     ],
     "require": {
@@ -14,12 +14,12 @@
     },
     "autoload": {
         "psr-4": {
-            "Sejo\\Pagination\\": ""
+            "DevNoisy\\Manage\\": ""
         }
     },
     "extra": {
         "branch-alias": {
-            "dev-master": "5.6-dev"
+            "dev-master": "0.2-dev"
         }
     },
     "config": {

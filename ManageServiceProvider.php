@@ -1,11 +1,11 @@
 <?php
 
 //namespace Illuminate\Pagination;
-namespace Sejo\Pagination;
+namespace DevNoisy\Manage;
 
 use Illuminate\Support\ServiceProvider;
 
-class PaginationServiceProvider extends ServiceProvider
+class ManageServiceProvider extends ServiceProvider
 {
     /**
      * Bootstrap any application services.
@@ -14,12 +14,12 @@ class PaginationServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        $this->loadViewsFrom(__DIR__.'/resources/views', 'pagination');
+        $this->loadViewsFrom(__DIR__.'/src/views', 'manage');
 
         if ($this->app->runningInConsole()) {
             $this->publishes([
-                __DIR__.'/resources/views' => $this->app->resourcePath('views/vendor/pagination'),
-            ], 'sejo-laravel-pagination');/*laravel-pagination*/
+                __DIR__.'/src/views' => $this->app->resourcePath('views/vendor/manage'),
+            ], 'sejo-laravel-template');/*laravel-pagination*/
         }
     }
 
